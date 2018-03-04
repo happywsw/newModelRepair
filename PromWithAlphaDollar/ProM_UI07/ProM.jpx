@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--JBuilder XML Project-->
+<project>
+<property category="debug.0" name="RemoteAttachArgumentNames.1" value="hostname"/>
+<property category="debug.0" name="RemoteAttachArgumentNames.2" value="port"/>
+<property category="debug.0" name="RemoteAttachArgumentValues.1" value="localhost"/>
+<property category="debug.0" name="RemoteAttachArgumentValues.2" value="3999"/>
+<property category="debug.0" name="RemoteAttachTransport" value="dt_socket"/>
+<property category="debug.0" name="RemoteLaunchTransport" value="dt_socket"/>
+<property category="generalFormatting" name="baseCodeStyle" value="java/Java Standard.codestyle"/>
+<property category="generalFormatting2" name="blockIndent" value="4"/>
+<property category="generalFormatting2" name="continuationIndent" value="8"/>
+<property category="generalFormatting2" name="overrideBasicFormatting" value="1"/>
+<property category="javaFormatting" name="alignMultilineAssign" value="1"/>
+<property category="javaFormatting" name="alwaysClasses" value="1"/>
+<property category="javaFormatting" name="arrayInitDataOnNewLine" value="0"/>
+<property category="javaFormatting" name="blankLinesAfterClass" value="2"/>
+<property category="javaFormatting" name="catchOnNewLine" value="0"/>
+<property category="javaFormatting" name="elseOnNewLine" value="0"/>
+<property category="javaFormatting" name="extendsOnNewLine" value="0"/>
+<property category="javaFormatting" name="finallyOnNewLine" value="0"/>
+<property category="javaFormatting" name="implementsOnNewLine" value="0"/>
+<property category="javaFormatting" name="indentCase" value="0"/>
+<property category="javaFormatting" name="packagePrefixGroups" value="java;BLANK_LINE;javax;BLANK_LINE;(*)"/>
+<property category="javaFormatting" name="preservedBlankLinesInDecl" value="2"/>
+<property category="javaFormatting" name="spaceBeforeLparen" value="0"/>
+<property category="javaFormatting" name="whileOnNewLine" value="0"/>
+<property category="javaFormatting" name="wrapAtColumn" value="150"/>
+<property category="javadoc" name="custom.tags.1" value="todo;a;To Do:"/>
+<property category="optimize.0" name="OptimizableType" value="intuitive.ide.borland.jb10.ProfilerBootstrap"/>
+<property category="optimize.0" name="oicc.FilterFile" value="C:\Programming\ProM\trunk\ProM.oif"/>
+<property category="optimize.0" name="oipr.EnableUnitTest" value="0"/>
+<property category="optimize.0" name="oipr.FilterFile" value="C:\Programming\ProM\trunk\ProM.oif"/>
+<property category="optimize.0" name="oira.AttachHost" value="localhost"/>
+<property category="optimize.0" name="oira.FilterFile" value="C:\Programming\ProM\trunk\ProM.oif"/>
+<property category="optimize.1" name="OptimizableType" value="intuitive.ide.borland.jb10.ProfilerBootstrap"/>
+<property category="optimize.1" name="oicc.FilterFile" value="C:\Programming\ProM\trunk\ProM.oif"/>
+<property category="optimize.1" name="oipr.EnableUnitTest" value="0"/>
+<property category="optimize.1" name="oipr.FilterFile" value="C:\Programming\ProM\trunk\ProM.oif"/>
+<property category="optimize.1" name="oira.AttachHost" value="localhost"/>
+<property category="optimize.1" name="oira.FilterFile" value="C:\Programming\ProM\trunk\ProM.oif"/>
+<property category="optimize.2" name="OptimizableType" value="intuitive.ide.borland.jb10.ProfilerBootstrap"/>
+<property category="optimize.2" name="oicc.FilterFile" value="C:\Programming\ProM\trunk\ProM.oif"/>
+<property category="optimize.2" name="oipr.EnableUnitTest" value="0"/>
+<property category="optimize.2" name="oipr.FilterFile" value="C:\Programming\ProM\trunk\ProM.oif"/>
+<property category="optimize.2" name="oira.AttachHost" value="localhost"/>
+<property category="optimize.2" name="oira.FilterFile" value="C:\Programming\ProM\trunk\ProM.oif"/>
+<property category="runtime" name="ConfigurationCount" value="2"/>
+<property category="runtime.0" name="BuildTargetOnRun" value="com.borland.jbuilder.build.ProjectBuilder$ProjectBuildAction;make"/>
+<property category="runtime.0" name="ConfigurationName" value="ProM"/>
+<property category="runtime.0" name="RunnableType" value="com.borland.jbuilder.runtime.ApplicationRunner"/>
+<property category="runtime.0" name="application.class" value="org.processmining.ProM"/>
+<property category="runtime.0" name="application.vmparameters" value="-Xmx1500M -Djava.library.path=./lib/external/ -noverify"/>
+<property category="runtime.0" name="custom.init_required" value="0"/>
+<property category="runtime.0" name="custom.override_required" value="1"/>
+<property category="runtime.0" name="custom.required.1" value="lib/framework/MXMLib.jar"/>
+<property category="runtime.0" name="custom.required.2" value="lib/framework/slickerbox0.5.jar"/>
+<property category="runtime.0" name="custom.required.3" value="lib/framework/GantzGraf-0.9.jar"/>
+<property category="runtime.1" name="BuildTargetOnRun" value="com.borland.jbuilder.build.ProjectBuilder$ProjectBuildAction;make"/>
+<property category="runtime.1" name="ConfigurationName" value="ProM 1G ram"/>
+<property category="runtime.1" name="RunnableType" value="com.borland.jbuilder.runtime.ApplicationRunner"/>
+<property category="runtime.1" name="application.class" value="org.processmining.ProM"/>
+<property category="runtime.1" name="application.vmparameters" value="-Xmx1000M -Djava.library.path=./lib/external/ -noverify"/>
+<property category="runtime.1" name="custom.init_required" value="0"/>
+<property category="runtime.1" name="custom.override_required" value="1"/>
+<property category="runtime.1" name="custom.required.1" value="lib/framework/GantzGraf-0.9.jar"/>
+<property category="runtime.1" name="custom.required.2" value="lib/framework/MXMLib.jar"/>
+<property category="runtime.1" name="custom.required.3" value="lib/framework/slickerbox0.5.jar"/>
+<property category="runtime.2" name="BuildTargetOnRun" value="com.borland.jbuilder.build.ProjectBuilder$ProjectBuildAction;make"/>
+<property category="runtime.2" name="ConfigurationName" value="ProM 512M ram"/>
+<property category="runtime.2" name="RunnableType" value="com.borland.jbuilder.runtime.ApplicationRunner"/>
+<property category="runtime.2" name="application.class" value="org.processmining.ProM"/>
+<property category="runtime.2" name="application.vmparameters" value="-Xmx512M -Djava.library.path=./lib/external/ -noverify"/>
+<property category="runtime.2" name="custom.init_required" value="0"/>
+<property category="runtime.2" name="custom.override_required" value="1"/>
+<property category="runtime.2" name="custom.required.1" value="lib/framework/GantzGraf-0.9.jar"/>
+<property category="runtime.2" name="custom.required.2" value="lib/framework/MXMLib.jar"/>
+<property category="runtime.2" name="custom.required.3" value="lib/framework/slickerbox0.5.jar"/>
+<property category="serverservices" name="disabled.services" value="jdatastore"/>
+<property category="serverservices" name="single.server.name" value=""/>
+<property category="sys" name="AuthorLabel" value="@author"/>
+<property category="sys" name="BackupPath" value="bak"/>
+<property category="sys" name="CheckStable" value="1"/>
+<property category="sys" name="Company" value=""/>
+<property category="sys" name="CompanyLabel" value="Company:"/>
+<property category="sys" name="Copyright" value="Copyright (c) 2007"/>
+<property category="sys" name="CopyrightLabel" value="Copyright:"/>
+<property category="sys" name="DefaultPath" value="src/framework"/>
+<property category="sys" name="Description" value=""/>
+<property category="sys" name="DescriptionLabel" value="Description:"/>
+<property category="sys" name="DocPath" value="doc"/>
+<property category="sys" name="ExcludeClassEnabled" value="0"/>
+<property category="sys" name="IncludeTestPath" value="1"/>
+<property category="sys" name="IncrementalCompilation" value="1"/>
+<property category="sys" name="InstanceVisibility" value="2"/>
+<property category="sys" name="JDK" value="java version 1.5.0_03-b07"/>
+<property category="sys" name="JvmVersion" value="1.5"/>
+<property category="sys" name="LastTag" value="0"/>
+<property category="sys" name="Libraries" value="lib/clus/ProMclus.jar;lib/external/colt.jar;lib/external/commons-collections-3.2.jar;lib/external/commons-math-1.1.jar;lib/external/holub.jar;lib/external/jcommon-1.0.6.jar;lib/external/jdom.jar;lib/external/jfreechart-1.0.5.jar;lib/external/jlfgr-1_0.jar;lib/external/jung-1.7.6.jar;lib/external/kaon2.jar;lib/external/kxml2.jar;lib/external/lpsolve55j.jar;lib/external/mathCollection.jar;lib/external/testng-5.7-jdk15.jar;lib/external/weka.jar;lib/external/wsml2reasoner-noncom-v0_5.jar;lib/external/WSML-grammar-20070417.jar;lib/external/wsmo4j-0.6.1.jar;lib/external/wsmo-api-0.6.1.jar;lib/framework/MXMLib.jar;lib/framework/slickerbox0.5.jar;lib/plugins/WorkflowPatternsMiner.jar;lib/plugins/emailplugin.jar;lib/plugins/AlphaPPProcessMiner.jar;lib/plugins/BPEL2PNML.jar;lib/plugins/TsinghuaAlphaProcessMiner.jar;lib/plugins/JFLAP.jar;lib/plugins/saminer.jar;lib/plugins/kriminer.jar;lib/external/java-cup-11a-runtime.jar;lib/framework/GantzGraf-0.9.jar"/>
+<property category="sys" name="MakeStable" value="0"/>
+<property category="sys" name="OutPath" value="classes"/>
+<property category="sys" name="SourcePath" value="src/framework;src/models;src/plugins;src/tests;test"/>
+<property category="sys" name="SourceVersion" value="1.5"/>
+<property category="sys" name="TestPath" value="test"/>
+<property category="sys" name="Title" value=""/>
+<property category="sys" name="TitleLabel" value="Title:"/>
+<property category="sys" name="Version" value="1.0"/>
+<property category="sys" name="VersionLabel" value="@version"/>
+<property category="sys" name="WorkingDirectory" value="."/>
+<property category="sys" name="ant.usehostjdk" value="0"/>
+<node name="DecisionMiner" type="Archive">
+<property category="archiving" name="buildWithProject" value="0"/>
+<property category="archiving" name="contentRules.1" value="I:org/processmining/analysis/decisionmining/**"/>
+<property category="archiving" name="targetCompressed" value="1"/>
+<property category="archiving" name="targetPath" value="lib/plugins/DM.jar"/>
+<property category="archiving" name="usingRules" value="1"/>
+</node>
+<node name="Grappa" type="Archive">
+<property category="archiving" name="buildWithProject" value="0"/>
+<property category="archiving" name="contentRules.1" value="I:att/**"/>
+<property category="archiving" name="targetCompressed" value="1"/>
+<property category="archiving" name="targetPath" value="lib/framework/att.jar"/>
+<property category="archiving" name="usingRules" value="1"/>
+</node>
+<node name="java_cup" type="Archive">
+<property category="archiving" name="buildWithProject" value="0"/>
+<property category="archiving" name="contentRules.1" value="I:java_cup_grappa/**"/>
+<property category="archiving" name="targetCompressed" value="1"/>
+<property category="archiving" name="targetPath" value="lib/framework/java_cup.jar"/>
+<property category="archiving" name="usingRules" value="1"/>
+</node>
+<node name="recommendations" type="Archive">
+<property category="archiving" name="buildWithProject" value="0"/>
+<property category="archiving" name="contentRules.1" value="I:org/processmining/framework/models/recommendation/**"/>
+<property category="archiving" name="contentRules.2" value="I:org/processmining/framework/log/**"/>
+<property category="archiving" name="targetCompressed" value="1"/>
+<property category="archiving" name="targetPath" value="lib/recommendations.jar"/>
+<property category="archiving" name="usingRules" value="1"/>
+</node>
+<node name="Z ProM JavaDoc" type="Javadoc">
+<property category="docletJavadoc" name="author" value="1"/>
+<property category="docletJavadoc" name="use" value="1"/>
+<property category="docletJavadoc" name="version" value="1"/>
+<property category="nodeJavadoc" name="buildWithProject" value="0"/>
+<property category="nodeJavadoc" name="directory" value="doc"/>
+<property category="nodeJavadoc" name="displayAllOutput" value="1"/>
+</node>
+<file path="build.xml">
+<property category="ant" name="dependencyphase" value="compile"/>
+<property category="ant" name="usebmj" value="0"/>
+</file>
+</project>
