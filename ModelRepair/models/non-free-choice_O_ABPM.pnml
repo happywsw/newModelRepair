@@ -54,6 +54,7 @@
         <name>
             <text>P0</text>
          </name>
+		 <initialMarking><text>1</text></initialMarking>
     </place>
     <transition id="trans_0">
         <graphics>
@@ -284,5 +285,6 @@
             </spline>
         </toolspecific>
     </arc>
+	<finalmarkings><marking><place idref="n1"><text>1</text></place><place idref="n2"><text>0</text></place><place idref="n3"><text>0</text></place><place idref="n4"><text>0</text></place><place idref="n5"><text>0</text></place><place idref="n6"><text>0</text></place></marking></finalmarkings>
 </net>
 </pnml>

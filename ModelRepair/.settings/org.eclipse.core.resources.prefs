@@ -1,2 +1,5 @@
 eclipse.preferences.version=1
-encoding//src/com/bpplus/BPPlusSimilarity.java=UTF-8
+encoding//src/com/modelrepair/relation/BPPlusSimilarity.java=UTF-8
+encoding//src/com/modelrepair/relation/alphaDollar/IntervalTasksSet.java=UTF-8
+encoding//src/com/modelrepair/relation/alphaDollar/ModifiedAlphaSharpProcessMiner.java=UTF-8
+encoding/<project>=UTF-8

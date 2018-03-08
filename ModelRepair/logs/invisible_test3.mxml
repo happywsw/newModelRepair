@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- This file has been generated with the OpenXES library. It conforms -->
+<!-- to the legacy MXML standard for log storage and management. -->
+<!-- OpenXES library version: 1.0RC7 -->
+<!-- OpenXES is available from http://www.xes-standard.org/ -->
+<WorkflowLog>
+	<Source program="XES MXML serialization" openxes.version="1.0RC7"/>
+	<Process id="Generated event log" description="process with id Generated event log">
+		<Data>
+			<attribute name="concept:name">Generated event log</attribute>
+		</Data>
+		<ProcessInstance id="Trace 1" description="instance with id Trace 1">
+			<Data>
+				<attribute name="concept:name">Trace 1</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">B</attribute>
+				</Data>
+				<WorkflowModelElement>B</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">B</attribute>
+				</Data>
+				<WorkflowModelElement>B</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+		<ProcessInstance id="Trace 2" description="instance with id Trace 2">
+			<Data>
+				<attribute name="concept:name">Trace 2</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">B</attribute>
+				</Data>
+				<WorkflowModelElement>B</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+		<ProcessInstance id="Trace 3" description="instance with id Trace 3">
+			<Data>
+				<attribute name="concept:name">Trace 3</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">t5</attribute>
+				</Data>
+				<WorkflowModelElement>t5</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+		<ProcessInstance id="Trace 4" description="instance with id Trace 4">
+			<Data>
+				<attribute name="concept:name">Trace 4</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">B</attribute>
+				</Data>
+				<WorkflowModelElement>B</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+		<ProcessInstance id="Trace 5" description="instance with id Trace 5">
+			<Data>
+				<attribute name="concept:name">Trace 5</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">t5</attribute>
+				</Data>
+				<WorkflowModelElement>t5</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+		<ProcessInstance id="Trace 6" description="instance with id Trace 6">
+			<Data>
+				<attribute name="concept:name">Trace 6</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">t5</attribute>
+				</Data>
+				<WorkflowModelElement>t5</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+		<ProcessInstance id="Trace 7" description="instance with id Trace 7">
+			<Data>
+				<attribute name="concept:name">Trace 7</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">B</attribute>
+				</Data>
+				<WorkflowModelElement>B</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+		<ProcessInstance id="Trace 8" description="instance with id Trace 8">
+			<Data>
+				<attribute name="concept:name">Trace 8</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">B</attribute>
+				</Data>
+				<WorkflowModelElement>B</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+		<ProcessInstance id="Trace 9" description="instance with id Trace 9">
+			<Data>
+				<attribute name="concept:name">Trace 9</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">t5</attribute>
+				</Data>
+				<WorkflowModelElement>t5</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">t5</attribute>
+				</Data>
+				<WorkflowModelElement>t5</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">t5</attribute>
+				</Data>
+				<WorkflowModelElement>t5</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+		<ProcessInstance id="Trace 10" description="instance with id Trace 10">
+			<Data>
+				<attribute name="concept:name">Trace 10</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">t5</attribute>
+				</Data>
+				<WorkflowModelElement>t5</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+		<ProcessInstance id="Trace 11" description="instance with id Trace 11">
+			<Data>
+				<attribute name="concept:name">Trace 11</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">t5</attribute>
+				</Data>
+				<WorkflowModelElement>t5</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">t5</attribute>
+				</Data>
+				<WorkflowModelElement>t5</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+		<ProcessInstance id="Trace 12" description="instance with id Trace 12">
+			<Data>
+				<attribute name="concept:name">Trace 12</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">t5</attribute>
+				</Data>
+				<WorkflowModelElement>t5</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+		<ProcessInstance id="Trace 13" description="instance with id Trace 13">
+			<Data>
+				<attribute name="concept:name">Trace 13</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">t5</attribute>
+				</Data>
+				<WorkflowModelElement>t5</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+		<ProcessInstance id="Trace 14" description="instance with id Trace 14">
+			<Data>
+				<attribute name="concept:name">Trace 14</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">B</attribute>
+				</Data>
+				<WorkflowModelElement>B</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">B</attribute>
+				</Data>
+				<WorkflowModelElement>B</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+		<ProcessInstance id="Trace 15" description="instance with id Trace 15">
+			<Data>
+				<attribute name="concept:name">Trace 15</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">t5</attribute>
+				</Data>
+				<WorkflowModelElement>t5</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">B</attribute>
+				</Data>
+				<WorkflowModelElement>B</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+		<ProcessInstance id="Trace 16" description="instance with id Trace 16">
+			<Data>
+				<attribute name="concept:name">Trace 16</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">t5</attribute>
+				</Data>
+				<WorkflowModelElement>t5</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+		<ProcessInstance id="Trace 17" description="instance with id Trace 17">
+			<Data>
+				<attribute name="concept:name">Trace 17</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">B</attribute>
+				</Data>
+				<WorkflowModelElement>B</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">B</attribute>
+				</Data>
+				<WorkflowModelElement>B</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">B</attribute>
+				</Data>
+				<WorkflowModelElement>B</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+		<ProcessInstance id="Trace 18" description="instance with id Trace 18">
+			<Data>
+				<attribute name="concept:name">Trace 18</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">t5</attribute>
+				</Data>
+				<WorkflowModelElement>t5</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">B</attribute>
+				</Data>
+				<WorkflowModelElement>B</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+		<ProcessInstance id="Trace 19" description="instance with id Trace 19">
+			<Data>
+				<attribute name="concept:name">Trace 19</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">t5</attribute>
+				</Data>
+				<WorkflowModelElement>t5</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">t5</attribute>
+				</Data>
+				<WorkflowModelElement>t5</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">B</attribute>
+				</Data>
+				<WorkflowModelElement>B</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">B</attribute>
+				</Data>
+				<WorkflowModelElement>B</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+		<ProcessInstance id="Trace 20" description="instance with id Trace 20">
+			<Data>
+				<attribute name="concept:name">Trace 20</attribute>
+			</Data>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">A</attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">B</attribute>
+				</Data>
+				<WorkflowModelElement>B</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">B</attribute>
+				</Data>
+				<WorkflowModelElement>B</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">t5</attribute>
+				</Data>
+				<WorkflowModelElement>t5</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<attribute name="concept:name">C</attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>complete</EventType>
+			</AuditTrailEntry>
+		</ProcessInstance>
+	</Process>
+</WorkflowLog>
