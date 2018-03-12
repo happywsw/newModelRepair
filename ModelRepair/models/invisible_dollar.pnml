@@ -116,7 +116,7 @@ Created with Workflow PetriNet Designer Version 3.2.0 (woped.org)-->
     </transition>
     <transition id="t1">
       <name>
-        <text>A</text>
+        <text>H</text>
         <graphics>
           <offset x="120" y="210"/>
         </graphics>

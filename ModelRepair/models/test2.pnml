@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<pnml>
+<net id="workflownet" type="http://www.informatik.hu-berlin.de/top/pnml/basicPNML.rng">
+    <place id="place_0">
+        <graphics>
+            <position x="16" y="18" />
+            <dimension x="13" y="13" />
+        </graphics>
+        <name>
+            <text>place_3</text>
+         </name>
+    </place>
+    <place id="place_1">
+        <graphics>
+            <position x="98" y="18" />
+            <dimension x="13" y="13" />
+        </graphics>
+        <name>
+            <text>place_1</text>
+         </name>
+    </place>
+    <transition id="trans_0">
+        <graphics>
+            <position  x="57" y="18" />
+            <dimension x="22" y="17" />
+        </graphics>
+        <name>
+            <text>G</text>
+         </name>
+        <toolspecific tool="ProM" version="5.2">
+            <logevent>
+                <name> None</name>
+                <type> None</type>
+            </logevent>
+        </toolspecific>
+    </transition>
+    <arc id="arc_0" source="trans_0" target="place_1">
+        <toolspecific tool="ProM" version="5.2">
+            <spline>
+                <point x="69" y="18" />
+                <point x="74" y="18" />
+                <point x="80" y="18" />
+                <point x="86" y="18" />
+                <end x="91" y="18" />
+            </spline>
+        </toolspecific>
+    </arc>
+    <arc id="arc_1" source="place_0" target="trans_0">
+        <toolspecific tool="ProM" version="5.2">
+            <spline>
+                <point x="23" y="18" />
+                <point x="28" y="18" />
+                <point x="34" y="18" />
+                <point x="40" y="18" />
+                <end x="45" y="18" />
+            </spline>
+        </toolspecific>
+    </arc>
+</net>
+</pnml>

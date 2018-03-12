@@ -3,20 +3,30 @@ package com.modelrepair;
 
 
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
-import org.jbpt.petri.NetSystem;
-import org.processmining.framework.log.LogReader;
+import java.util.Set;
 
+import org.jbpt.petri.NetSystem;
+import org.jbpt.petri.Transition;
+import org.processmining.framework.log.LogEvent;
+import org.processmining.framework.log.LogEvents;
+import org.processmining.framework.log.LogReader;
+import org.processmining.framework.models.petrinet.PetriNet;
 import com.modelrepair.relation.BPPlusSimilarity;
 import com.modelrepair.relation.alphaDollar.AlphaMixMine;
+import com.modelrepair.repair.HighLevelOp;
 import com.modelrepair.util.FileUtil;
+import com.modelrepair.util.PetriNetConversion;
 
 
 
 public class ModelRepair {
+	ArrayList<String> common = new ArrayList<String>();
 	HashMap<String, HashMap<String, Integer>> modelRelationMatrix;
 	HashMap<String, HashMap<String, Integer>> logReationMatrix;
 	HashMap<String, String> mappingNames;
@@ -41,9 +51,23 @@ public class ModelRepair {
 		printMatrix(logReationMatrix);
 	}
 	
-	public void repair(LogReader log, NetSystem model){
+	public void repair(LogReader log, NetSystem model) throws IOException{
+		List<String> deleteOp = new ArrayList<String>();
+		List<String> insertOp = new ArrayList<String>();
+		List<String> moveOp = new ArrayList<String>();
+		
+		this.common = getCommon(log, model);
+		
+		//1.delete the task in the model not in the log
+		deleteOp = delete(log, model);
+		
+		//2.move the model transition arrcoring to the log
+	//	moveOp = move(log, model);
+		
+		//3.insert the transition not in the model but in the log
+		//insertOp = insert(log, model);
 		//1.1 get the model relation matrix based on BP+
-		getModelRelation(model);
+	/*	getModelRelation(model);
 		
 		//1.2 get the log realtion matrix based on alpha#
 		getLogRelation(log);
@@ -57,11 +81,101 @@ public class ModelRepair {
 		}else if(differentValue == 0){
 			System.out.println("Total different, please use process mining algorithm..");
 			return;
-		}
+		}*/
 		
 		//2. specific repair progress
 	}
 	
+	//1.delete the task in model not in the log
+	public  ArrayList<String> delete(LogReader log, NetSystem model) throws IOException
+	{
+		ArrayList<String> del = new ArrayList<String>();
+		ArrayList dif = diff(log, model, false);
+		
+		if(dif == null)
+			return del;
+		
+		for(Transition tt: (ArrayList<Transition>)dif){
+			System.out.println(tt.getLabel());
+		}
+		//model = HighLevelOp.deleteOp(dif, model);
+		model = HighLevelOp.deleteOp(dif, model);
+		
+		PetriNet petri = PetriNetConversion.convert(model);
+		
+		// cpu
+		
+//		ProvidedObject po2 = new ProvidedObject("petrinet", petri);
+//		DotPngExport dpe2 = new DotPngExport();
+//		OutputStream image2 = new FileOutputStream("test/test1.pnml");
+//		dpe2.export(po2, image2);
+//		
+		System.out.println("export pnml");
+		FileUtil.Export(petri, "test/test1.pnml");
+		System.out.println("finish...");
+		
+		for(Transition st:(ArrayList<Transition>)dif){
+			String t="";
+			t=t+"delete(S,"+st+")";
+			del.add(t);
+		}
+		//System.out.println(dif);
+		return del;
+	}
+	
+	//2.move the transition according to the log
+	public ArrayList<String> move(LogReader log, NetSystem model){
+		return null;
+	}
+	
+	//3.insert the transition in the model
+	public ArrayList<String> insert(LogReader log, NetSystem model){
+		ArrayList<String> insert = new ArrayList<String>();
+		ArrayList<String> dif = diff(log, model, true);
+		if(dif == null)
+			return insert;
+		model = HighLevelOp.insertOp(dif, model);
+		
+		return insert;
+	}
+	private static ArrayList<String> getCommon(LogReader log, NetSystem model){
+		ArrayList<String> com = new ArrayList<String>();
+		 LogEvents events = log.getLogSummary().getLogEvents();
+		 Set<Transition> transList = model.getTransitions();
+		 
+		 for(LogEvent e: events){
+			 for(Transition tt:transList){
+				 if(e.getModelElementName().equals(tt.getLabel())){
+					 com.add(e.getModelElementName());
+					 continue;
+				 }
+			 }
+		 }
+	    return com;
+	}
+	
+	public ArrayList diff(LogReader log, NetSystem model, boolean flag){
+		ArrayList diffActivities = new ArrayList();
+		//flag == false, count the activity in the model not in the log
+		if(!flag){
+			 Set<Transition> transList = model.getTransitions();
+			 for(Transition tt: transList){
+				 
+				// if(!common.contains(tt.getLabel()) && !tt.getLabel().contains(Relation.SLIENTTRANSITION))
+				if(tt.getLabel().contains("Appeal to Judge"))
+					 diffActivities.add(tt);
+			 }
+		}else{
+			 LogEvents events = log.getLogSummary().getLogEvents();
+			 for(LogEvent event : events){
+				 if(!common.contains(event.getModelElementName()))
+					 diffActivities.add(event);
+			 	}
+		}
+		
+		return diffActivities;
+	}
+
 	 public static void printMatrix(HashMap<String, HashMap<String, Integer>> map){
 	    	Iterator iterator = map.entrySet().iterator();
 	    	while(iterator.hasNext()){
@@ -116,8 +230,8 @@ public class ModelRepair {
 	}
 	
 	public static void main(String[] args) throws Exception{
-		String modelPath = "models/L3.pnml";
-		String logPath = "logs/L3.mxml";
+		String modelPath = "models/testAA.pnml";
+		String logPath = "logs/invisible_test3.mxml";
 		
 		FileUtil util = new FileUtil();
 		NetSystem model = util.importModel(modelPath);

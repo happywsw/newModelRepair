@@ -162,7 +162,7 @@
             <dimension x="13" y="13" />
         </graphics>
         <name>
-            <text>inv_t3t6\n</text>
+            <text>inv_t3t6</text>
          </name>
         <toolspecific tool="ProM" version="5.2">
         </toolspecific>
@@ -173,7 +173,7 @@
             <dimension x="13" y="13" />
         </graphics>
         <name>
-            <text>inv_t4t1\n</text>
+            <text>inv_t4t1</text>
          </name>
         <toolspecific tool="ProM" version="5.2">
         </toolspecific>
@@ -184,7 +184,7 @@
             <dimension x="13" y="13" />
         </graphics>
         <name>
-            <text>inv_t2t5\n</text>
+            <text>inv_t2t5</text>
          </name>
         <toolspecific tool="ProM" version="5.2">
         </toolspecific>
@@ -195,7 +195,7 @@
             <dimension x="13" y="13" />
         </graphics>
         <name>
-            <text>inv_t4t3\n</text>
+            <text>inv_t4t3</text>
          </name>
         <toolspecific tool="ProM" version="5.2">
         </toolspecific>
@@ -206,7 +206,7 @@
             <dimension x="13" y="13" />
         </graphics>
         <name>
-            <text>inv_t4t7\n</text>
+            <text>inv_t4t7</text>
          </name>
         <toolspecific tool="ProM" version="5.2">
         </toolspecific>
@@ -217,7 +217,7 @@
             <dimension x="13" y="13" />
         </graphics>
         <name>
-            <text>inv_t2t7\n</text>
+            <text>inv_t2t7</text>
          </name>
         <toolspecific tool="ProM" version="5.2">
         </toolspecific>
@@ -228,7 +228,7 @@
             <dimension x="13" y="13" />
         </graphics>
         <name>
-            <text>inv_t4t6\n</text>
+            <text>inv_t4t6</text>
          </name>
         <toolspecific tool="ProM" version="5.2">
         </toolspecific>
@@ -239,7 +239,7 @@
             <dimension x="48" y="25" />
         </graphics>
         <name>
-            <text>h\ncomplete</text>
+            <text>h</text>
          </name>
         <toolspecific tool="ProM" version="5.2">
             <logevent>

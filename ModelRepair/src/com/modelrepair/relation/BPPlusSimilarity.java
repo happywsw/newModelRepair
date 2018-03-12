@@ -16,7 +16,6 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.ArrayList;
 import java.io.File;
 
@@ -137,6 +136,7 @@ public class BPPlusSimilarity {
         htPresets.put(net, htPreNode);
         HashMap<Place, Transition[]> htPrePlace = new HashMap();
         htPreOfPlace.put(net, htPrePlace);
+        
         HashMap<Node, Node[]> htPostNode = new HashMap();
         htPostsets.put(net, htPostNode);
         HashMap<Place, Transition[]> htPostPlace = new HashMap();

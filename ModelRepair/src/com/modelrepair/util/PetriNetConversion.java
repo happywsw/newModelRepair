@@ -208,16 +208,18 @@ public class PetriNetConversion {
 		// TODO Auto-generated method stub
 		org.processmining.framework.models.petrinet.PetriNet  net = new org.processmining.framework.models.petrinet.PetriNet();
 		Map<org.jbpt.petri.Node,org.processmining.framework.models.petrinet.PNNode> nodeMap = new HashMap<org.jbpt.petri.Node, org.processmining.framework.models.petrinet.PNNode>();
-		
+				
+		if(ns == null)
+			return net;
 		
 		for(org.jbpt.petri.Transition t: ns.getTransitions()){
-			org.processmining.framework.models.petrinet.Transition tt = new org.processmining.framework.models.petrinet.Transition(t.getName(), net);
+			org.processmining.framework.models.petrinet.Transition tt = new org.processmining.framework.models.petrinet.Transition(t.getLabel(), net);
 			net.addTransition(tt);
 			nodeMap.put(t, tt);
 		}
 		
 		for(org.jbpt.petri.Place p: ns.getPlaces()){
-			org.processmining.framework.models.petrinet.Place pp = new org.processmining.framework.models.petrinet.Place(p.getName(), net);
+			org.processmining.framework.models.petrinet.Place pp = new org.processmining.framework.models.petrinet.Place(p.getLabel(), net);
 			net.addPlace(pp);
 			nodeMap.put(p, pp);
 		}
