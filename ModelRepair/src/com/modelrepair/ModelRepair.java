@@ -162,7 +162,7 @@ public class ModelRepair {
 			 for(Transition tt: transList){
 				 
 				// if(!common.contains(tt.getLabel()) && !tt.getLabel().contains(Relation.SLIENTTRANSITION))
-				if(tt.getLabel().contains("Appeal to Judge"))
+				//if(tt.getLabel().contains("Appeal to Judge"))
 					 diffActivities.add(tt);
 			 }
 		}else{
@@ -230,7 +230,7 @@ public class ModelRepair {
 	}
 	
 	public static void main(String[] args) throws Exception{
-		String modelPath = "models/testAA.pnml";
+		String modelPath = "models/Fig2_prom5.2.pnml";
 		String logPath = "logs/invisible_test3.mxml";
 		
 		FileUtil util = new FileUtil();

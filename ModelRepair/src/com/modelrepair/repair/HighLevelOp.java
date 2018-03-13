@@ -272,11 +272,10 @@ public class HighLevelOp {
 					System.out.println(preSet.size());
 					for (Transition t : preSet) {
 						System.out.println("label:" + t.getLabel());
-
 						if (t.getLabel().contains(Relation.SLIENTTRANSITION)
-								&& model.getPostset(t).size() - getSuccSilenNum(t, model) > 1
+								&& model.getPostsetTransitions(model.getPostset(t)).size() - getSuccSilenNum(t, model) > 1
 								|| (!t.getLabel().contains(Relation.SLIENTTRANSITION)
-										&& model.getPostset(t).size() - getSuccSilenNum(t, model) >= 1)) {
+										&& model.getPostsetTransitions(model.getPostset(t)).size() - getSuccSilenNum(t, model) >= 1)) {
 							System.out.println("88888888888888888");
 							model.getPostset(t).addAll(succPlace);
 							for (Place su : succPlace) {
@@ -306,7 +305,8 @@ public class HighLevelOp {
 								model.addFlow(p, t);
 							}
 						}else{
-							if((model.getPostset(succ).size() - getSuccSilentTransitions(succ, model).size() >= 1) || model.getPostsetTransitions(model.getPostset(t)).size() - getSuccSilenNum(t, model) >= 1){
+							if((model.getPostset(succ).size() - getSuccSilentTransitions(succ, model).size() >= 1)
+									|| model.getPostsetTransitions(model.getPostset(t)).size() - getSuccSilenNum(t, model) >= 1){
 								System.out.println("haha");
 								for(Place p: prePlace){
 									model.addFlow(p, t);
@@ -400,10 +400,19 @@ public class HighLevelOp {
 					if (model.getPresetTransitions(model.getPreset(t)).size() > 0) {
 						for (Place succ : model.getPostset(t)) {
 							if (model.getPostset(succ).size() - getSuccSilentTransitions(succ, model).size() != 0) {
-								for (Transition ti : model.getPresetTransitions(model.getPreset(t)))
+								for (Transition ti : model.getPresetTransitions(model.getPreset(t))){
 									model.addFlow(ti, succ);
+								}
 							} else {
-								deleteSilentTransition(succ, model);
+								if(model.getPostset(succ).size() - getSuccSilentTransitions(succ,model).size() == 0){
+									boolean flag = false;
+									for(Transition tt: model.getPostset(succ)){
+										if(getSinkTransitions(model).contains(tt))
+											flag = true;
+									}
+									if(flag)
+										deleteSilentTransition(succ, model);
+								}
 								model.removePlace(succ);
 								
 							}
@@ -474,7 +483,15 @@ public class HighLevelOp {
 								for (Transition ti : model.getPostsetTransitions(model.getPostset(t)))
 									model.addFlow(pre, ti);
 							} else {
-								deleteSilentTransition(pre, model);
+								if(model.getPreset(pre).size() - getPreSilentTransitions(pre,model).size() == 0){
+									boolean flag = false;
+									for(Transition tt: model.getPreset(pre)){
+										if(getSourceTransitions(model).contains(tt))
+											flag = true;
+									}
+									if(flag)
+										deleteSilentTransition(pre, model);
+								}
 								model.removePlace(pre);
 							}
 						}
